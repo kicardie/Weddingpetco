@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Wedding Pet Co. — loving wedding day pet attendant services based in Colorado."><title>Wedding Inquiry | Wedding Pet Co.</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"><style>
+:root{--cream:#fbf7f0;--olive:#606943;--ink:#24231f;--sand:#f2e7da}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:14px/1.65 Montserrat,Arial,sans-serif}a{text-decoration:none;color:inherit}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0 0 20px}h1{font-size:clamp(56px,7vw,104px)}h2{font-size:clamp(42px,5vw,72px)}h3{font-size:32px}.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:11px;font-weight:500}.btn{display:inline-block;background:var(--olive);border:1px solid var(--olive);color:white;padding:14px 26px;font:13px Montserrat,sans-serif;cursor:pointer}.btn.light{background:transparent;border-color:white}.btn:hover{opacity:.86}header{min-height:125px;padding:17px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px}nav{display:flex;align-items:center;gap:27px}nav a{font-size:13px}.brand{text-align:center;min-width:260px;line-height:1.1}.brand svg{display:block;width:94px;height:88px;margin:0 auto 5px}.brand strong{font:400 30px Georgia,serif;letter-spacing:.14em}.brand small{display:block;letter-spacing:.32em;font-size:9px;margin-top:7px}.hero{min-height:630px;position:relative;background:#73755b url('wedding-dog.jpg') center 45%/cover no-repeat;display:flex;align-items:center;color:white}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.59),rgba(0,0,0,.08) 78%)}.hero>div{position:relative;padding:70px 7%;max-width:680px}.hero p{font:italic 29px/1.2 'Cormorant Garamond',Georgia,serif;max-width:360px}.rule{border-top:1px solid #eee;width:145px;margin:26px 0}.section{padding:85px 7%}.about{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:7%}.portrait{max-width:420px;margin:auto;border:1px solid #b9a892;padding:8px;border-radius:48% 48% 0 0}.portrait img{display:block;width:100%;height:470px;object-fit:cover;border-radius:48% 48% 0 0}.about p{margin:10px 0}.mountains{text-align:center;font-size:32px;color:var(--olive);margin:20px 0 0}.center{text-align:center}.service-strip{background:var(--sand);display:grid;grid-template-columns:repeat(3,1fr);padding:32px 6%}.service-strip>div{text-align:center;padding:10px 22px;border-right:1px solid #c7b7a6}.service-strip>div:last-child{border:0}.service-strip svg{height:46px;width:46px;stroke:currentColor;stroke-width:1.5;fill:none}.service-strip h3{font:15px/1.6 Georgia,serif;letter-spacing:.2em;text-transform:uppercase;margin:10px 0}.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.columns article{border-top:1px solid #c8b8a6;padding-top:20px}.gallery{background:#f4ebdf}.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.gallery img{width:100%;height:420px;object-fit:cover}.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid #c8b8a6;padding:20px 0}.faq summary{cursor:pointer;font-size:16px}.contact{background:var(--olive);color:white;text-align:center}.contact p{max-width:650px;margin:0 auto 24px}.contact .btn{background:white;color:var(--olive);border-color:white}form{max-width:600px;margin:25px auto;display:grid;gap:14px;text-align:left}label{display:block;font-size:12px}input,textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #c9c5b9;font:14px Montserrat,sans-serif}form button{justify-self:start}footer{text-align:center;padding:28px;background:#eee3d5;font-size:12px}@media(max-width:900px){header{justify-content:center;flex-wrap:wrap}.brand{order:-1;width:100%}nav{gap:16px}.about{grid-template-columns:1fr}.columns{grid-template-columns:1fr}}@media(max-width:600px){nav{flex-wrap:wrap;justify-content:center}nav a{font-size:11px}.brand strong{font-size:24px}.hero{min-height:540px;background-position:57% center}.hero:before{background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.08))}.hero>div{padding:40px 6%}.section{padding:60px 6%}.portrait img{height:390px}.service-strip{grid-template-columns:1fr}.service-strip>div{border-right:0;border-bottom:1px solid #c7b7a6}.gallery-grid{grid-template-columns:1fr}.gallery img{height:310px}}
+
+/* Keep the opening message and the entire photo visible. */
+header{min-height:100px;padding:10px 5%}
+.brand svg{width:60px;height:53px;margin-bottom:3px}
+.brand strong{font-size:24px}
+.brand small{font-size:8px;margin-top:4px}
+.hero{min-height:560px;height:calc(100svh - 100px);max-height:780px;background:#555d40;isolation:isolate}
+.hero:before{background:linear-gradient(90deg,#555d40 0%,rgba(85,93,64,.9) 35%,transparent 65%);z-index:0}
+.hero:after{content:'';position:absolute;inset:0 0 0 43%;background:url('wedding-dog.jpg') center / contain no-repeat;z-index:-1}
+.hero>div{padding:30px 5%;max-width:56%;z-index:1}
+.hero h1{font-size:clamp(52px,5.2vw,78px);line-height:1.02;margin:12px 0 18px}
+.hero p{font-size:25px;margin:18px 0;max-width:380px}
+.hero .rule{margin:18px 0}
+.gallery-grid{align-items:start}
+.gallery img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:900px){
+header{min-height:100px;gap:8px;padding:10px 4%}
+.brand{min-width:0;width:auto;order:0}
+.brand strong{font-size:20px}
+nav{gap:12px}nav a{font-size:11px}nav .btn{padding:10px 14px}
+.hero>div{max-width:58%;padding:25px 4%}
+.hero h1{font-size:clamp(46px,6vw,60px)}
+}
+@media(max-width:600px){
+header{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 5%}
+.brand{grid-column:1/-1;grid-row:1}
+.brand svg{width:46px;height:42px}
+nav{gap:14px}.brand strong{font-size:21px}
+.hero{height:auto;max-height:none;min-height:0;display:flex;flex-direction:column;background:var(--olive)}
+.hero:before{display:none}
+.hero:after{position:relative;inset:auto;order:-1;width:100%;height:380px;background-color:var(--sand);z-index:0}
+.hero>div{max-width:100%;width:100%;padding:28px 6% 34px}
+.hero h1{font-size:clamp(44px,10vw,60px)}
+.hero p{font-size:24px}
+.gallery img{height:auto}
+}
+
+
+/* Full-width photograph behind the opening message. */
+.hero{background:#555d40 url('wedding-dog.jpg') center top / cover no-repeat}
+.hero:after{display:none}
+.hero:before{display:block;z-index:0;background:linear-gradient(90deg,rgba(0,0,0,.66),rgba(0,0,0,.24) 48%,rgba(0,0,0,.03) 78%)}
+@media(max-width:600px){
+.hero{min-height:620px;height:calc(100svh - 150px);max-height:none;flex-direction:row;background-position:55% top}
+.hero:after{display:none}
+.hero:before{display:block;background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.2))}
+.hero>div{padding:32px 6%;max-width:100%}
+.hero h1{font-size:clamp(42px,9vw,54px)}
+}
+
+/* Pull back the portrait while blending the photo across the full hero. */
+.hero{background-position:center 20%}
+.hero:after{display:block;position:absolute;inset:0;z-index:-1;background:url('wedding-dog.jpg') center top / auto 135% no-repeat;mask-image:linear-gradient(90deg,transparent 22%,#000 38%,#000 62%,transparent 78%)}
+.hero:before{background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 40%,rgba(0,0,0,.05) 78%)}
+@media(max-width:600px){.hero:after{display:block;position:absolute;inset:0;order:0;width:auto;height:auto;background-size:auto 115%;background-position:55% top;mask-image:none}}
+.portrait{overflow:hidden}.portrait img{filter:grayscale(1);transform:scale(1.13);transform-origin:50% 42%}
+
+.brand-mark{display:flex;align-items:center;justify-content:center;gap:15px;margin:0 auto 5px}
+.brand-mark:before,.brand-mark:after{content:'';display:block;width:47px;height:1px;background:#a58b6b}
+.brand .brand-mark svg{width:66px;height:58px;margin:0}
+@media(max-width:600px){.brand .brand-mark svg{width:54px;height:48px}.brand-mark{gap:12px}.brand-mark:before,.brand-mark:after{width:36px}}
+
+.brand{color:#4b2e18}
+.brand strong{font-weight:400;letter-spacing:.17em}
+.brand small{letter-spacing:.27em;font-size:8px;margin-top:6px}
+.brand-mark{align-items:flex-end;gap:12px;margin-bottom:6px}
+.brand-mark:before,.brand-mark:after{width:56px;background:#94734f;margin-bottom:10px}
+.brand .brand-mark svg{width:72px;height:62px}
+@media(max-width:900px){.brand strong{font-size:20px}.brand small{font-size:6.5px;letter-spacing:.2em}.brand-mark:before,.brand-mark:after{width:43px}}
+@media(max-width:600px){.brand strong{font-size:21px}.brand small{font-size:6.5px}.brand .brand-mark svg{width:60px;height:52px}.brand-mark:before,.brand-mark:after{width:42px;margin-bottom:8px}}
+
+.portrait img{filter:none}
+.gallery-grid{align-items:stretch}
+.gallery img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 40%}
+@media(max-width:600px){.gallery img{height:auto;aspect-ratio:4/5}}
+</style><style>.inquiry{max-width:850px;margin:auto}.inquiry h1{font-size:clamp(46px,7vw,72px)}.inquiry form{max-width:none}.inquiry input,.inquiry textarea{background:#fffdf9;color:var(--ink);border-radius:0}.inquiry textarea{min-height:120px;resize:vertical}.inquiry :focus-visible{outline:2px solid var(--olive);outline-offset:4px}.inquiry-actions{display:flex;gap:14px;flex-wrap:wrap}.notice{padding:20px;border:1px solid #c8b8a6;background:var(--sand)}#review{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit} [hidden]{display:none!important}</style></head><body><header><a class="eyebrow" href="index.html">Wedding Pet Co.</a><a href="index.html#inquire">← Back to our website</a></header><main class="section inquiry"><div class="eyebrow">Your wedding, your best friend</div><h1>Tell us about your day.</h1><p>Share your wedding plans and a little about your pet so you can prepare for a consultation.</p><p class="notice" id="form-notice"><strong>Inquiries are not being sent online yet.</strong> This form lets you review and download your details on this device. Nothing is sent to Wedding Pet Co. or saved on our servers. To connect with us, please <a href="https://calendly.com/kicardie/30min" style="text-decoration:underline">schedule a consultation</a> and bring your details along.</p><noscript><p>JavaScript is needed to prepare your inquiry. Please schedule a consultation using the link above.</p></noscript><form id="inquiry-form" aria-describedby="form-notice"><label for="name">Name<input id="name" name="Name" type="text" autocomplete="name"  required></label>
+<label for="email">Email<input id="email" name="Email" type="email" autocomplete="email"  required></label>
+<label for="phone">Phone<input id="phone" name="Phone" type="tel" autocomplete="tel"  required></label>
+<label for="wedding-date">Wedding date<input id="wedding-date" name="Wedding date" type="date"   required></label>
+<label for="venue">Venue (or undecided)<input id="venue" name="Venue (or undecided)" type="text"   required></label>
+<label for="location">Wedding location<input id="location" name="Wedding location" type="text"   required></label>
+<label for="pet-names">Pet name(s)<input id="pet-names" name="Pet name(s)" type="text"   required></label>
+<label for="pet-breeds">Pet breed(s)<input id="pet-breeds" name="Pet breed(s)" type="text"   required></label>
+<label for="pet-count">Number of pets<input id="pet-count" name="Number of pets" type="number"  min="1" step="1" required></label><label for="involvement">Requested involvement<textarea id="involvement" name="Requested involvement" placeholder="Ceremony, photos, transportation, or other care" required></textarea></label><label for="notes">Notes (optional)<textarea id="notes" name="Notes"></textarea></label><button class="btn" type="submit">Review My Inquiry</button></form><section id="inquiry-review" hidden aria-labelledby="review-title" tabindex="-1"><h2 id="review-title">Your inquiry is ready to review.</h2><p role="status"><strong>Your inquiry has not been sent.</strong> Download a copy for your records and schedule a consultation to discuss your plans.</p><pre id="review"></pre><div class="inquiry-actions"><button class="btn" id="download" type="button">Download My Inquiry</button><a class="btn" href="https://calendly.com/kicardie/30min">Schedule a Consultation</a></div></section></main><footer><div class="eyebrow">Wedding Pet Co.</div><p>Colorado wedding pet attendants · For the dogs who are family</p></footer><script>
+const form=document.getElementById('inquiry-form');
+const panel=document.getElementById('inquiry-review');
+let inquiryText='';
+form.addEventListener('submit',event=>{
+ event.preventDefault();
+ inquiryText='Wedding Pet Co. — Inquiry Draft (not sent)\n\n'+Array.from(new FormData(form),([key,value])=>key+': '+String(value).trim()).join('\n\n');
+ document.getElementById('review').textContent=inquiryText;
+ panel.hidden=false;
+ panel.focus();
+});
+form.addEventListener('input',()=>{panel.hidden=true;inquiryText='';});
+document.getElementById('download').addEventListener('click',()=>{
+ if(!inquiryText)return;
+ const url=URL.createObjectURL(new Blob([inquiryText],{type:'text/plain;charset=utf-8'}));
+ const link=document.createElement('a');link.href=url;link.download='wedding-pet-co-inquiry.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script></body></html>
