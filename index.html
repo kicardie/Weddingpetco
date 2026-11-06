@@ -1,5 +1,42 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Wedding Pet Co. — loving wedding day pet attendant services based in Colorado."><title>Wedding Pet Co. | Wedding Pet Attendants</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"><style>
 :root{--cream:#fbf7f0;--olive:#606943;--ink:#24231f;--sand:#f2e7da}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:14px/1.65 Montserrat,Arial,sans-serif}a{text-decoration:none;color:inherit}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0 0 20px}h1{font-size:clamp(56px,7vw,104px)}h2{font-size:clamp(42px,5vw,72px)}h3{font-size:32px}.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:11px;font-weight:500}.btn{display:inline-block;background:var(--olive);border:1px solid var(--olive);color:white;padding:14px 26px;font:13px Montserrat,sans-serif;cursor:pointer}.btn.light{background:transparent;border-color:white}.btn:hover{opacity:.86}header{min-height:125px;padding:17px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px}nav{display:flex;align-items:center;gap:27px}nav a{font-size:13px}.brand{text-align:center;min-width:260px;line-height:1.1}.brand svg{display:block;width:94px;height:88px;margin:0 auto 5px}.brand strong{font:400 30px Georgia,serif;letter-spacing:.14em}.brand small{display:block;letter-spacing:.32em;font-size:9px;margin-top:7px}.hero{min-height:630px;position:relative;background:#73755b url('wedding-dog.jpg') center 45%/cover no-repeat;display:flex;align-items:center;color:white}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.59),rgba(0,0,0,.08) 78%)}.hero>div{position:relative;padding:70px 7%;max-width:680px}.hero p{font:italic 29px/1.2 'Cormorant Garamond',Georgia,serif;max-width:360px}.rule{border-top:1px solid #eee;width:145px;margin:26px 0}.section{padding:85px 7%}.about{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:7%}.portrait{max-width:420px;margin:auto;border:1px solid #b9a892;padding:8px;border-radius:48% 48% 0 0}.portrait img{display:block;width:100%;height:470px;object-fit:cover;border-radius:48% 48% 0 0}.about p{margin:10px 0}.mountains{text-align:center;font-size:32px;color:var(--olive);margin:20px 0 0}.center{text-align:center}.service-strip{background:var(--sand);display:grid;grid-template-columns:repeat(3,1fr);padding:32px 6%}.service-strip>div{text-align:center;padding:10px 22px;border-right:1px solid #c7b7a6}.service-strip>div:last-child{border:0}.service-strip svg{height:46px;width:46px;stroke:currentColor;stroke-width:1.5;fill:none}.service-strip h3{font:15px/1.6 Georgia,serif;letter-spacing:.2em;text-transform:uppercase;margin:10px 0}.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.columns article{border-top:1px solid #c8b8a6;padding-top:20px}.gallery{background:#f4ebdf}.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.gallery img{width:100%;height:420px;object-fit:cover}.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid #c8b8a6;padding:20px 0}.faq summary{cursor:pointer;font-size:16px}.contact{background:var(--olive);color:white;text-align:center}.contact p{max-width:650px;margin:0 auto 24px}.contact .btn{background:white;color:var(--olive);border-color:white}form{max-width:600px;margin:25px auto;display:grid;gap:14px;text-align:left}label{display:block;font-size:12px}input,textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #c9c5b9;font:14px Montserrat,sans-serif}form button{justify-self:start}footer{text-align:center;padding:28px;background:#eee3d5;font-size:12px}@media(max-width:900px){header{justify-content:center;flex-wrap:wrap}.brand{order:-1;width:100%}nav{gap:16px}.about{grid-template-columns:1fr}.columns{grid-template-columns:1fr}}@media(max-width:600px){nav{flex-wrap:wrap;justify-content:center}nav a{font-size:11px}.brand strong{font-size:24px}.hero{min-height:540px;background-position:57% center}.hero:before{background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.08))}.hero>div{padding:40px 6%}.section{padding:60px 6%}.portrait img{height:390px}.service-strip{grid-template-columns:1fr}.service-strip>div{border-right:0;border-bottom:1px solid #c7b7a6}.gallery-grid{grid-template-columns:1fr}.gallery img{height:310px}}
+
+/* Keep the opening message and the entire photo visible. */
+header{min-height:100px;padding:10px 5%}
+.brand svg{width:60px;height:53px;margin-bottom:3px}
+.brand strong{font-size:24px}
+.brand small{font-size:8px;margin-top:4px}
+.hero{min-height:560px;height:calc(100svh - 100px);max-height:780px;background:#555d40;isolation:isolate}
+.hero:before{background:linear-gradient(90deg,#555d40 0%,rgba(85,93,64,.9) 35%,transparent 65%);z-index:0}
+.hero:after{content:'';position:absolute;inset:0 0 0 43%;background:url('wedding-dog.jpg') center / contain no-repeat;z-index:-1}
+.hero>div{padding:30px 5%;max-width:56%;z-index:1}
+.hero h1{font-size:clamp(52px,5.2vw,78px);line-height:1.02;margin:12px 0 18px}
+.hero p{font-size:25px;margin:18px 0;max-width:380px}
+.hero .rule{margin:18px 0}
+.gallery-grid{align-items:start}
+.gallery img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:900px){
+header{min-height:100px;gap:8px;padding:10px 4%}
+.brand{min-width:0;width:auto;order:0}
+.brand strong{font-size:20px}
+nav{gap:12px}nav a{font-size:11px}nav .btn{padding:10px 14px}
+.hero>div{max-width:58%;padding:25px 4%}
+.hero h1{font-size:clamp(46px,6vw,60px)}
+}
+@media(max-width:600px){
+header{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 5%}
+.brand{grid-column:1/-1;grid-row:1}
+.brand svg{width:46px;height:42px}
+nav{gap:14px}.brand strong{font-size:21px}
+.hero{height:auto;max-height:none;min-height:0;display:flex;flex-direction:column;background:var(--olive)}
+.hero:before{display:none}
+.hero:after{position:relative;inset:auto;order:-1;width:100%;height:380px;background-color:var(--sand);z-index:0}
+.hero>div{max-width:100%;width:100%;padding:28px 6% 34px}
+.hero h1{font-size:clamp(44px,10vw,60px)}
+.hero p{font-size:24px}
+.gallery img{height:auto}
+}
+
 </style></head><body><header id="home"><nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a></nav><a href="#home" class="brand" aria-label="Wedding Pet Co. homepage"><svg viewBox="0 0 120 110" role="img" aria-label="Golden retriever head in elegant fine line art" fill="none" stroke="#a37746" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
 <path d="M19 97 Q15 88 20 80 Q11 83 14 73 Q7 74 12 65 Q5 64 13 55 Q8 53 17 45 Q13 41 24 34 Q23 28 34 25 Q35 18 45 18 Q51 11 63 14 Q75 10 84 17 Q90 16 94 23 Q100 24 102 31"/>
 <path d="M28 94 Q22 83 29 73 Q21 77 24 66 Q17 68 22 57 Q18 54 27 47 Q24 43 33 36 Q33 30 43 26 Q51 19 61 21 Q69 16 78 22 Q86 22 91 29"/>
