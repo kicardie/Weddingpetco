@@ -75,7 +75,7 @@ nav{gap:14px}.brand strong{font-size:21px}
 .gallery-grid{align-items:stretch}
 .gallery img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 40%}
 @media(max-width:600px){.gallery img{height:auto;aspect-ratio:4/5}}
-</style><style>.inquiry{max-width:850px;margin:auto}.inquiry h1{font-size:clamp(46px,7vw,72px)}.inquiry form{max-width:none}.inquiry input,.inquiry textarea{background:#fffdf9;color:var(--ink);border-radius:0}.inquiry textarea{min-height:120px;resize:vertical}.inquiry :focus-visible{outline:2px solid var(--olive);outline-offset:4px}.inquiry-actions{display:flex;gap:14px;flex-wrap:wrap}.notice{padding:20px;border:1px solid #c8b8a6;background:var(--sand)}#review{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit} [hidden]{display:none!important}</style></head><body><header><a class="eyebrow" href="index.html">Wedding Pet Co.</a><a href="index.html#inquire">← Back to our website</a></header><main class="section inquiry"><div class="eyebrow">Your wedding, your best friend</div><h1>Tell us about your day.</h1><p>Share your wedding plans and a little about your pet so you can prepare for a consultation.</p><p class="notice" id="form-notice"><strong>Inquiries are not being sent online yet.</strong> This form lets you review and download your details on this device. Nothing is sent to Wedding Pet Co. or saved on our servers. To connect with us, please <a href="https://calendly.com/kicardie/30min" style="text-decoration:underline">schedule a consultation</a> and bring your details along.</p><noscript><p>JavaScript is needed to prepare your inquiry. Please schedule a consultation using the link above.</p></noscript><form id="inquiry-form" aria-describedby="form-notice"><label for="name">Name<input id="name" name="Name" type="text" autocomplete="name"  required></label>
+</style><style>.inquiry{max-width:850px;margin:auto}.inquiry h1{font-size:clamp(46px,7vw,72px)}.inquiry form{max-width:none}.inquiry input,.inquiry textarea{background:#fffdf9;color:var(--ink);border-radius:0}.inquiry textarea{min-height:120px;resize:vertical}.inquiry :focus-visible{outline:2px solid var(--olive);outline-offset:4px}.inquiry-actions{display:flex;gap:14px;flex-wrap:wrap}.notice{padding:20px;border:1px solid #c8b8a6;background:var(--sand)}#review{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit} [hidden]{display:none!important}</style></head><body><header><a class="eyebrow" href="index.html">Wedding Pet Co.</a><a href="index.html#inquire">← Back to our website</a></header><main class="section inquiry"><div class="eyebrow">Your wedding, your best friend</div><h1>Tell us about your day.</h1><p>Share your wedding plans and a little about your pet so you can prepare for a consultation.</p><p class="notice" id="form-notice"><strong>Prepare your inquiry.</strong> Review and download your details below, then schedule a consultation to share your plans with us. This form does not send your details or photos to Wedding Pet Co.; they stay on your device. To connect with us, please <a href="https://calendly.com/kicardie/30min" style="text-decoration:underline">schedule a consultation</a> and bring your details along.</p><noscript><p>JavaScript is needed to prepare your inquiry. Please schedule a consultation using the link above.</p></noscript><form id="inquiry-form" aria-describedby="form-notice"><label for="name">Name<input id="name" name="Name" type="text" autocomplete="name"  required></label>
 <label for="email">Email<input id="email" name="Email" type="email" autocomplete="email"  required></label>
 <label for="phone">Phone<input id="phone" name="Phone" type="tel" autocomplete="tel"  required></label>
 <label for="wedding-date">Wedding date<input id="wedding-date" name="Wedding date" type="date"   required></label>
@@ -83,10 +83,38 @@ nav{gap:14px}.brand strong{font-size:21px}
 <label for="location">Wedding location<input id="location" name="Wedding location" type="text"   required></label>
 <label for="pet-names">Pet name(s)<input id="pet-names" name="Pet name(s)" type="text"   required></label>
 <label for="pet-breeds">Pet breed(s)<input id="pet-breeds" name="Pet breed(s)" type="text"   required></label>
-<label for="pet-count">Number of pets<input id="pet-count" name="Number of pets" type="number"  min="1" step="1" required></label><label for="involvement">Requested involvement<textarea id="involvement" name="Requested involvement" placeholder="Ceremony, photos, transportation, or other care" required></textarea></label><label for="notes">Notes (optional)<textarea id="notes" name="Notes"></textarea></label><button class="btn" type="submit">Review My Inquiry</button></form><section id="inquiry-review" hidden aria-labelledby="review-title" tabindex="-1"><h2 id="review-title">Your inquiry is ready to review.</h2><p role="status"><strong>Your inquiry has not been sent.</strong> Download a copy for your records and schedule a consultation to discuss your plans.</p><pre id="review"></pre><div class="inquiry-actions"><button class="btn" id="download" type="button">Download My Inquiry</button><a class="btn" href="https://calendly.com/kicardie/30min">Schedule a Consultation</a></div></section></main><footer><div class="eyebrow">Wedding Pet Co.</div><p>Colorado wedding pet attendants · For the dogs who are family</p></footer><script>
+<label for="pet-count">Number of pets<input id="pet-count" name="Number of pets" type="number"  min="1" step="1" required></label><div><label for="pet-photo">Pet photo (optional)<input id="pet-photo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="photo-help photo-status"></label><p id="photo-help">Choose a JPG, PNG, or WebP up to 10 MB. Your photo is previewed on this device only and is not included in the text download.</p><p id="photo-status" role="status"></p><img id="photo-preview" alt="Selected pet photo" hidden style="display:block;max-width:100%;max-height:320px;object-fit:contain;margin:12px 0"><button class="btn" id="remove-photo" type="button" hidden>Remove Photo</button></div><label for="involvement">Requested involvement<textarea id="involvement" name="Requested involvement" placeholder="Ceremony, photos, transportation, or other care" required></textarea></label><label for="notes">Notes (optional)<textarea id="notes" name="Notes"></textarea></label><button class="btn" type="submit">Review My Inquiry</button></form><section id="inquiry-review" hidden aria-labelledby="review-title" tabindex="-1"><h2 id="review-title">Your inquiry is ready to review.</h2><p role="status"><strong>Your inquiry has not been sent.</strong> Download a copy for your records and schedule a consultation to discuss your plans.</p><pre id="review"></pre><div class="inquiry-actions"><button class="btn" id="download" type="button">Download My Inquiry</button><a class="btn" href="https://calendly.com/kicardie/30min">Schedule a Consultation</a></div></section></main><footer><div class="eyebrow">Wedding Pet Co.</div><p>Colorado wedding pet attendants · For the dogs who are family</p></footer><script>
 const form=document.getElementById('inquiry-form');
 const panel=document.getElementById('inquiry-review');
 let inquiryText='';
+const photoInput=document.getElementById('pet-photo');
+const photoPreview=document.getElementById('photo-preview');
+const photoStatus=document.getElementById('photo-status');
+const removePhoto=document.getElementById('remove-photo');
+let photoUrl='';
+function clearPhoto(){
+ if(photoUrl)URL.revokeObjectURL(photoUrl);
+ photoUrl='';
+ photoPreview.removeAttribute('src');
+ photoPreview.hidden=true;
+ removePhoto.hidden=true;
+ photoInput.value='';
+ panel.hidden=true;inquiryText='';
+}
+photoInput.addEventListener('change',()=>{
+ const file=photoInput.files[0];
+ clearPhoto();
+ if(!file){photoStatus.textContent='';return;}
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10*1024*1024){
+ photoStatus.textContent='Please choose a JPG, PNG, or WebP no larger than 10 MB.';return;
+ }
+ photoUrl=URL.createObjectURL(file);
+ photoPreview.src=photoUrl;photoPreview.hidden=false;removePhoto.hidden=false;
+ photoStatus.textContent=file.name+' — selected for local preview only; not sent.';
+});
+photoPreview.addEventListener('error',()=>{clearPhoto();photoStatus.textContent='This image could not be opened. Please choose another photo.';});
+removePhoto.addEventListener('click',()=>{clearPhoto();photoStatus.textContent='Photo removed.';photoInput.focus();});
+window.addEventListener('pagehide',()=>{if(photoUrl)URL.revokeObjectURL(photoUrl);});
 form.addEventListener('submit',event=>{
  event.preventDefault();
  inquiryText='Wedding Pet Co. — Inquiry Draft (not sent)\n\n'+Array.from(new FormData(form),([key,value])=>key+': '+String(value).trim()).join('\n\n');
